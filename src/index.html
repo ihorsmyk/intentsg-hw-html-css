@@ -3,12 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>intentsg</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/modern-normalize/modern-normalize.css"
+    />
+
     <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <header class="header">
+      <include src="./partials/header.html"></include>
+    </header>
+
+    <main class="main">
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/description01.html"></include>
+      <include src="./partials/description02.html"></include>
+      <include src="./partials/description03.html"></include>
+    </main>
+
+    <footer class="footer">
+      <include src="./partials/footer.html"></include>
+    </footer>
   </body>
 </html>
+
