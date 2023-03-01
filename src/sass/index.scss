@@ -2,14 +2,11 @@
 @import './base/container';
 @import './base/section';
 
-@import './components/description-section';
-
 @import './layout/header';
 @import './layout/hero';
 @import './layout/footer';
-@import './layout/description01';
-@import './layout/description02';
-@import './layout/description03';
+@import './layout/chapter01';
+@import './layout/chapter02';
+@import './layout/chapter03';
 
-@import './utils/mixins';
 @import './utils/variables';

@@ -1,0 +1,52 @@
+@import '../utils/mixins';
+
+.chapter {
+  display: flex;
+  position: relative;
+
+  .chapter__number {
+    @include font(700, 240px, 240px);
+    opacity: 0.1;
+    position: absolute;
+    top: 70px;
+    left: -70;
+  }
+
+  .chapter__content-box {
+    padding: 80px;
+
+    .chapter__start-text {
+      @include font(800, 14px, 22px);
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      color: var(--secondary-text-color);
+      position: relative;
+      margin-left: 96px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 72px;
+        height: 2px;
+        top: 10px;
+        left: -90px;
+        background-color: var(--secondary-text-color);
+      }
+    }
+
+    .chapter__title {
+      margin-top: 27px;
+      @include font(600, 64px, 77px);
+    }
+
+    .chapter__description {
+      margin-top: 27px;
+      @include font(700, 18px, 32px);
+    }
+  }
+
+  .chapter__img {
+    max-width: 566px;
+    max-height: 720px;
+  }
+}

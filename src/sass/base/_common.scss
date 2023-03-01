@@ -35,13 +35,15 @@ img {
 .btn {
   cursor: pointer;
   border: none;
+  background-color: inherit;
   padding: 0;
 }
 
 body {
+  box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: var(--foreground-color);
+  color: var(--primary-text-color);
   background-color: var(--background-color);
 }
