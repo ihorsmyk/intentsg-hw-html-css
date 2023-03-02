@@ -1,0 +1,41 @@
+@import '../utils/mixins';
+
+.header {
+  padding-top: 34px;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    font-family: 'EB Garamond', serif;
+    @include font(600, 32px, 39px);
+  }
+
+  &-menu {
+    display: flex;
+    column-gap: 30px;
+  }
+}
+
+.socials-and-site-nav {
+  .socials {
+    left: 40px;
+    position: fixed;
+  }
+  .site-nav {
+    right: 40;
+    position: fixed;
+
+    &__list {
+      align-items: end;
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+    }
+  }
+}

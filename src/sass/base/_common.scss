@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap');
+
 h1,
 h2,
 h3,
@@ -9,11 +11,16 @@ p {
   margin-bottom: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul,
 ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style: none;
 }
 
 img {
@@ -41,9 +48,10 @@ img {
 
 body {
   box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--primary-text-color);
   background-color: var(--background-color);
 }

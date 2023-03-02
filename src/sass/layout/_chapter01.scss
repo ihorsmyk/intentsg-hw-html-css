@@ -4,7 +4,7 @@
   display: flex;
   position: relative;
 
-  .chapter__number {
+  &__number {
     @include font(700, 240px, 240px);
     opacity: 0.1;
     position: absolute;
@@ -12,7 +12,7 @@
     left: -70;
   }
 
-  .chapter__content-box {
+  &__content-box {
     padding: 80px;
 
     .chapter__start-text {
@@ -46,7 +46,7 @@
   }
 
   .chapter__img {
-    max-width: 566px;
-    max-height: 720px;
+    width: 566px;
+    height: 720px;
   }
 }
