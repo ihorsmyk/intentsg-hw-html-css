@@ -1,8 +1,11 @@
 @import '../utils/mixins';
 
 .header {
+  background-color: transparent;
   padding-top: 34px;
-  max-width: 1700px;
+  width: 1550px;
+  // padding-left: 15px;
+  // padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -23,19 +26,40 @@
 }
 
 .socials-and-site-nav {
+  margin-top: 180px;
+
   .socials {
-    left: 40px;
+    left: 4%;
     position: fixed;
+
+    &__text {
+      @include font(700, 18px, 22px);
+      transform: rotate(90deg);
+      transform-origin: left top;
+      margin-left: 20px;
+    }
+
+    &__list {
+      //   margin-top: -300px;
+    }
   }
+
   .site-nav {
-    right: 40;
+    border-right: 3px solid var(--primary-text-color);
+    padding-right: 15px;
+    right: 4%;
     position: fixed;
 
     &__list {
       align-items: end;
       display: flex;
       flex-direction: column;
-      row-gap: 40px;
+      row-gap: 60px;
+    }
+
+    &__link {
+      @include font(700, 18px, 26px);
+      color: inherit;
     }
   }
 }

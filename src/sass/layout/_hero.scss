@@ -1,0 +1,36 @@
+@import '../utils/mixins';
+
+.hero {
+  max-width: 950px;
+  padding: 100px 0 220px 0;
+
+  &__text {
+    @include font(800, 18px, 22px);
+    color: var(--secondary-text-color);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-left: 96px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 72px;
+      height: 2px;
+      top: 10px;
+      left: -90px;
+      background-color: var(--secondary-text-color);
+    }
+  }
+
+  &__title {
+    @include font(600, 88px, 100px);
+    margin-top: 32px;
+    font-family: 'EB Garamond', serif;
+  }
+
+  &__message {
+    @include font(700, 18px, 32px);
+    margin-top: 32px;
+  }
+}

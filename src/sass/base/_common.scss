@@ -39,11 +39,14 @@ img {
   color: inherit;
 }
 
-.btn {
-  cursor: pointer;
-  border: none;
-  background-color: inherit;
-  padding: 0;
+.gradient {
+  background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0b1d26 61.38%);
+  width: 100vw;
+}
+
+.background {
+  background-color: var(--background-color);
+  width: 100%;
 }
 
 body {
@@ -54,4 +57,12 @@ body {
   font-weight: 600;
   color: var(--primary-text-color);
   background-color: var(--background-color);
+
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url('../images/hero/hero.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }

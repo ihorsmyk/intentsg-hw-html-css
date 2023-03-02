@@ -1,0 +1,9 @@
+@import '../utils/mixins';
+
+.chapter2__number {
+  @include font(700, 240px, 240px);
+  opacity: 0.1;
+  position: absolute;
+  right: -70px;
+  top: 65px;
+}
