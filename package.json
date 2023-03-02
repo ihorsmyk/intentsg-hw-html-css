@@ -19,6 +19,7 @@
     "url": "https://github.com/ihorsmyk/intentsg-hw-html-css/issues"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {

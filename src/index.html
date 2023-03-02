@@ -9,8 +9,7 @@
       rel="stylesheet"
       href="../node_modules/modern-normalize/modern-normalize.css"
     />
-
-    <script type="module" src="./index.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
@@ -28,5 +27,9 @@
     <footer class="footer">
       <include src="./partials/footer.html"></include>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

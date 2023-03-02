@@ -1,11 +1,15 @@
 @import '../utils/mixins';
 
+@media screen and (max-width: 480px) {
+  .socials-and-site-nav {
+    display: none;
+  }
+}
+
 .header {
   background-color: transparent;
   padding-top: 34px;
-  width: 1550px;
-  // padding-left: 15px;
-  // padding-right: 15px;
+  width: 96%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -16,7 +20,8 @@
 
   &-menu {
     display: flex;
-    column-gap: 30px;
+    flex-direction: column;
+    row-gap: 10px;
   }
 }
 
@@ -35,7 +40,10 @@
     }
 
     &__list {
-      //   margin-top: -300px;
+      margin-top: 95px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
     }
   }
 
@@ -55,6 +63,16 @@
     &__link {
       @include font(700, 18px, 26px);
       color: inherit;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-header {
+    &-menu {
+      display: flex;
+      flex-direction: row;
+      column-gap: 20px;
     }
   }
 }

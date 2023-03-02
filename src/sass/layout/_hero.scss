@@ -1,36 +1,63 @@
 @import '../utils/mixins';
 
 .hero {
-  max-width: 950px;
-  padding: 100px 0 220px 0;
+  max-width: 330px;
+  padding: 60px 0 50px 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 
   &__text {
-    @include font(800, 18px, 22px);
+    @include font(700, 13px, 18px);
     color: var(--secondary-text-color);
     letter-spacing: 6px;
     text-transform: uppercase;
-    margin-left: 96px;
     position: relative;
-
-    &::before {
-      content: '';
-      position: absolute;
-      width: 72px;
-      height: 2px;
-      top: 10px;
-      left: -90px;
-      background-color: var(--secondary-text-color);
-    }
   }
 
   &__title {
-    @include font(600, 88px, 100px);
+    @include font(600, 28px, 38px);
     margin-top: 32px;
     font-family: 'EB Garamond', serif;
   }
+}
 
-  &__message {
-    @include font(700, 18px, 32px);
-    margin-top: 32px;
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 550px;
+    text-align: start;
+
+    &__text {
+      @include font(800, 15px, 20px);
+      margin-left: 96px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 72px;
+        height: 2px;
+        top: 10px;
+        left: -90px;
+        background-color: var(--secondary-text-color);
+      }
+    }
+
+    &__title {
+      @include font(600, 58px, 80px);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    max-width: 950px;
+
+    &__text {
+      @include font(800, 18px, 22px);
+    }
+
+    &__title {
+      @include font(600, 88px, 100px);
+    }
   }
 }

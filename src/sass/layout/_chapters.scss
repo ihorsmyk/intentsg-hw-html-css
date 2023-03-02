@@ -2,14 +2,11 @@
 
 .chapter {
   display: flex;
+  flex-direction: column;
   position: relative;
 
   &__number {
-    @include font(700, 240px, 240px);
-    opacity: 0.1;
-    position: absolute;
-    top: 70px;
-    left: -70px;
+    display: none;
   }
 
   &__content-box {
@@ -36,7 +33,7 @@
 
     .chapter__title {
       margin-top: 27px;
-      @include font(600, 64px, 77px);
+      @include font(600, 28px, 38px);
       font-family: 'EB Garamond', serif;
     }
 
@@ -46,8 +43,37 @@
     }
   }
 
-  .chapter__img {
-    width: 566px;
-    height: 720px;
+  &__img {
+    width: 340px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .chapter {
+    &__title {
+      @include font(600, 64px, 77px);
+    }
+
+    &__img {
+      width: 550px;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .chapter {
+    display: flex;
+    flex-direction: row;
+
+    &__number {
+      display: block;
+      @include font(700, 240px, 240px);
+      opacity: 0.1;
+      position: absolute;
+      top: 70px;
+      left: -70px;
+    }
   }
 }

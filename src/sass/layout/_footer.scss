@@ -2,12 +2,14 @@
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 50px;
 }
 
 .footer-section {
   display: flex;
   flex-direction: column;
+  text-align: center;
   row-gap: 16px;
 
   &__info {
@@ -24,4 +26,22 @@
 .copyright {
   @include font(500, 18px, 32px);
   opacity: 0.5;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-section {
+      text-align: start;
+    }
+  }
+
+  .copyright {
+    margin-top: -35px;
+    text-align: start;
+  }
 }
