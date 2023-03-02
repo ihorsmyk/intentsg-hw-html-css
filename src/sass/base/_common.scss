@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap');
+@import '../utils/mixins';
 
 h1,
 h2,
@@ -47,6 +48,11 @@ img {
 .background {
   background-color: var(--background-color);
   width: 100%;
+}
+
+.logo {
+  font-family: 'EB Garamond', serif;
+  @include font(600, 32px, 39px);
 }
 
 body {

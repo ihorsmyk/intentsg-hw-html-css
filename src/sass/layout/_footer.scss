@@ -1,0 +1,27 @@
+@import '../utils/mixins';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  &__info {
+    @include font(500, 18px, 32px);
+
+    &:first-child {
+      @include font(700, 24px, 32px);
+      color: var(--secondary-text-color);
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.copyright {
+  @include font(500, 18px, 32px);
+  opacity: 0.5;
+}

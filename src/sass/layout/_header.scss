@@ -14,11 +14,6 @@
   display: flex;
   justify-content: space-between;
 
-  &__logo {
-    font-family: 'EB Garamond', serif;
-    @include font(600, 32px, 39px);
-  }
-
   &-menu {
     display: flex;
     column-gap: 30px;
